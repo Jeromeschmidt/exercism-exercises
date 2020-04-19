@@ -1,5 +1,15 @@
 #include "hamming.h"
 
-namespace hamming {
+int hamming::compute(string a, string b){
+    if (a.length() != b.length()){
+		throw std::domain_error("Unequal size");
+	}
 
-}  // namespace hamming
+	int dist = 0;
+	for(int i=0; i<a.length(); i++){
+		if (a[i] != b[i]){
+			dist = dist + 1;
+		}
+	}
+	return dist;
+}
