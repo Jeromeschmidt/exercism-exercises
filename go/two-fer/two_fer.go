@@ -5,6 +5,7 @@
 // https://golang.org/doc/effective_go.html#commentary
 package twofer
 
+// O(n)
 // ShareWith should have a comment documenting it.
 func ShareWith(name string) string {
 	// Write some code here to pass the test suite.

@@ -2,6 +2,7 @@ package hamming
 
 import "errors"
 
+// O(n)
 func Distance(a, b string) (count int, err error) {
 
     for i := 0; i < len(a); i++ {
